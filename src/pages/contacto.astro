@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+<Layout>
+        <div class="container m-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="recibir.php" method="post">
+                        <input type="text" class="form-control" placeholder="Indique su nombre">
+                        <input type="email" class="form-control" placeholder="Indique su correo">
+                        <input type="password" class="form-control" placeholder="Indique su contrasena">
+                        <input type="number" class="form-control" placeholder="Indique su edad">
+                        <input type="date" class="form-control" placeholder="Indique la fecha">
+                        <input type="file" class="form-control" placeholder="Indique su archivo">
+                        <input type="submit" class="form-control btn btn-success" value="Enviar">
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="contacto.png" alt="" width="40%">
+                </div>
+            </div>
+        </div>
+
+
+        <form class="row g-3 needs-validation container mx-auto" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Primer Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="validationCustom02" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Telefono</label>
+                <input type="number" class="form-control" id="validationCustom03" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+            </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Estado</label>
+                <input type="email" class="form-control" id="validationCustom04" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Ciudad</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Elegir...</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Anzoátegui">Anzoátegui</option>
+                <option value="Apure">Apure</option>
+                <option value="Aragua">Aragua</option>
+                <option value="Barinas">Barinas</option>
+                <option value="Bolívar">Bolívar</option>
+                <option value="Carabobo">Carabobo</option>
+                <option value="Cojedes">Cojedes</option>
+                <option value="Delta Amacuro">Delta Amacuro</option>
+                <option value="Distrito Capital">Distrito Capital</option>
+                <option value="Falcón">Falcón</option>
+                <option value="Guárico">Guárico</option>
+                <option value="Lara">Lara</option>
+                <option value="Mérida">Mérida</option>
+                <option value="Miranda">Miranda</option>
+                <option value="Monagas">Monagas</option>
+                <option value="Nueva Esparta">Nueva Esparta</option>
+                <option value="Portuguesa">Portuguesa</option>
+                <option value="Sucre">Sucre</option>
+                <option value="Táchira">Táchira</option>
+                <option value="Trujillo">Trujillo</option>
+                <option value="Vargas">Vargas</option>
+                <option value="Yaracuy">Yaracuy</option>
+                <option value="Zulia">Zulia</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Comentarios</label>
+              <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+</Layout>

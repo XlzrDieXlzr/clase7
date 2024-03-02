@@ -1,0 +1,40 @@
+---
+let nombre="Diego Peña";
+let edad=21
+let estatura=1.65
+let dias=['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+
+const alumnos = [
+  {
+    cedula: '123456789',
+    nombre: 'Juan',
+    apellido: 'Pérez',
+    correo: 'juan@example.com',
+    telefono: '1234567890'
+  },
+  {
+    cedula: '987654321',
+    nombre: 'María',
+    apellido: 'Gómez',
+    correo: 'maria@example.com',
+    telefono: '0987654321'
+  },
+  {
+    cedula: '456789123',
+    nombre: 'Pedro',
+    apellido: 'Rodríguez',
+    correo: 'pedro@example.com',
+    telefono: '9876543210'
+  }
+];
+
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Cards.astro'
+---
+<Layout>
+    <h1 class="text-center">Nombre: {nombre}</h1>
+    <h1 class="text-center">Edad: {edad}</h1>
+    <h1 class="text-center">Estatura: {estatura}</h1>
+    <h1 class="text-center">Dias: {dias[6]}</h1>
+	<Card/>
+</Layout>
